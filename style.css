@@ -1,0 +1,280 @@
+/* authro: https://codepen.io/vcomics/pen/KBMyjE
+Victor Vergara
+ */
+body {
+    color: white;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    cursor: crosshair;
+   font-size: large;
+   font-family: vogue;
+
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  p {
+    color: rgb(255, 255, 255)
+  }
+  .header {
+    top: 35%;
+  }
+  .footer {
+    bottom:3%;
+  }
+  .description {
+    color: gray;
+    padding-top: 50px;
+  }
+  a, a:hover, a:visited {
+    color: white;
+    text-decoration: none;
+  } 
+  .disable-selection {
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer */
+     -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  }
+  h1::after {
+    content: ' Three JS';
+    font-size: 12px;
+    position:absolute;
+    top: 3px;
+    padding-left: 5px;
+    font-weight: 400;
+  }
+  h2::after {
+    content: '2';
+    font-size: 12px;
+    position:absolute;
+    top: 14px;
+    padding-left: 5px;
+  }
+
+
+
+p{
+  margin-bottom: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+  
+  
+  
+  
+ 
+  
+
+
+
+
+
+
+
+  button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 155, 0), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+bottom: -820px;
+right: -65px;
+font-family: vogue;
+    
+  }
+  
+  button:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 155, 0.559), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  button:before {
+    content: "";
+    position: fixed;
+    left: -4em;
+    width: 9em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    bottom: -184px;
+    right: -190px;
+  }
+  
+  .loader div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #00d7f8;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  
+  .loader div:nth-child(1) {
+    left: 8px;
+    animation: flip1 0.6s infinite;
+  }
+  
+  .loader div:nth-child(2) {
+    left: 8px;
+    animation: flip2 0.6s infinite;
+  }
+  
+  .loader div:nth-child(3) {
+    left: 32px;
+    animation: flip2 0.6s infinite;
+  }
+  
+  .loader div:nth-child(4) {
+    left: 56px;
+    animation: flip3 0.6s infinite;
+  }
+  
+  @keyframes flip1 {
+    0% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes flip3 {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes flip2 {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+
+
+
+  @media only screen and (min-width: 450px)
